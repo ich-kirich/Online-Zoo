@@ -14,6 +14,7 @@ html, body {
 }
 
 header {
+    position: relative;
     padding: 14px 0;
     background-color: #000000;
 }
@@ -76,4 +77,66 @@ header a {
 
 header .copyright {
     margin-left: 410px;
+}
+
+#preview {
+    width: auto;
+    min-height: 754px;
+    margin-top: -54px;
+    background: url(../../assets/images/background-preview.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 100% 100%;
+}
+
+#preview h2 {
+    position: absolute;
+    top: 70px;
+    left: 85px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#preview span {
+    color: #FFEE2E;
+}
+
+#preview .circle {
+    position: relative;
+    width: 465px; 
+    height: 465px;
+    top: 65px;
+    left: 590px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+
+#preview button {
+    position: absolute;
+    top: 530px;
+    left: 176px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: none;
+}
+
+#preview button p {
+    width: 280px;
+    margin: 0;
+    padding: 16px 75px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
 }
