@@ -358,3 +358,164 @@ header .copyright {
     background-position: 0 center;
     background-size: 100% 100%;
 }
+
+#feed-friend {
+    padding-top: 69px;
+    padding-bottom: 100px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+}
+
+#feed-friend .feed {
+    padding: 41px 20px 59px 99px;
+    background: rgba(253, 253, 255, 0.52);
+    border-radius: 20px;
+}
+
+#feed-friend h2 {
+    margin: 0;
+    margin-right: 82px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+
+#feed-friend p, #feed-friend .third-p a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #333B41;
+}
+
+#feed-friend .first-p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+#feed-friend .second-p {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+#feed-friend .third-p,  #feed-friend .third-p a{
+    margin-top: 9px;
+    width: 863px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+#feed-friend .third-p a {
+    text-decoration-color:  #FE9013;
+    text-underline-offset: 8px;
+}
+
+#feed-friend .how-works {
+    padding-top: 44px;
+}
+
+#feed-friend .how-works h3 {
+    margin: 0;
+    margin-right: 80px;
+    padding-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #333B41;
+    text-align: center;
+}
+
+#feed-friend .how-works .pictures {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 100px;
+}
+
+#feed-friend .pictures .step:first-child {
+    margin-bottom: 15px;
+
+}
+
+#feed-friend .how-works .img {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #FA6F32;
+}
+
+#feed-friend .pictures .pay {
+    background-image: url(../../assets/svg/pay.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 108px 60px;
+}
+
+#feed-friend .pictures .zoo {
+    background-image: url(../../assets/svg/zoo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 86px 95px;
+}
+
+#feed-friend .pictures .monkey {
+    background-image: url(../../assets/svg/monkey.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125px 72px;
+}
+
+#feed-friend .how-works p {
+    margin-top: 28px;
+    width: 168px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+#feed-friend .how-works .arrow {
+    margin-bottom: 100px;
+    width: 70px;
+    height: 38px;
+    background-image: url(../../assets/svg/arrow-step.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 100% 100%;
+}
+
+#feed-friend .feed-now {
+    margin-right: 80px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#feed-friend .feed-now button {
+    background: #F9804B;
+    border-radius: 25px;
+    border: none;
+}
+
+#feed-friend .feed-now button p {
+    width: 292px;
+    margin: 0;
+    padding: 14px 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
