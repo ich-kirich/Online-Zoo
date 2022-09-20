@@ -76,7 +76,7 @@ header a {
 }
 
 header .copyright {
-    margin-left: 410px;
+    margin-left: 370px;
 }
 
 #preview {
@@ -140,3 +140,83 @@ header .copyright {
     text-transform: uppercase;
     color: #fff;
 }
+
+#backstage {
+    position: relative;
+    margin-top: 140px;
+}
+
+#backstage .container {
+    display: flex;
+    flex-direction: row;
+    gap: 87px;
+}
+
+#backstage  .pict{
+    width: 1120px;
+    height: 403px;
+    background: url(../../assets/images/bamboo-cap.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 100% 100%;
+}
+
+#backstage .text {
+    width: 850px;
+}
+
+#backstage h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333B41;
+
+}
+
+#backstage p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+}
+
+#backstage .small-p {
+    margin-top: 20px;
+}
+
+#backstage .big-p {
+    margin-top: 34px;
+    line-height: 140%;
+}
+
+#backstage h3 {
+    margin-top: 54px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+#backstage .flowers {
+    position: absolute;
+    bottom: -60px;
+    right: 0px;
+    width: 200px;
+    height: 605px;
+    background: url(../../assets/images/flower.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 100% 100%;
+}
+
+#pets{
+    margin-top: 180px;
+}
+
