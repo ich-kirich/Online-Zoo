@@ -91,8 +91,8 @@ header .copyright {
 
 #preview h2 {
     position: absolute;
-    top: 70px;
-    left: 85px;
+    top: 75px;
+    left: 80px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -120,17 +120,14 @@ header .copyright {
 
 #preview button {
     position: absolute;
-    top: 530px;
-    left: 176px;
+    top: 535px;
+    left: 170px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     border: none;
-}
-
-#preview button p {
-    width: 280px;
+    width: 300px;
     margin: 0;
-    padding: 16px 75px;
+    padding: 16px 80px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -505,9 +502,6 @@ header .copyright {
     background: #FE9013;
     border-radius: 25px;
     border: none;
-}
-
-#feed-friend .feed-now button p {
     width: 292px;
     margin: 0;
     padding: 14px 50px;
@@ -523,8 +517,8 @@ header .copyright {
 
 #testimonials {
     position: relative;
-    padding-bottom: 150px;
-    margin-bottom: 30px;
+    padding-bottom: 152px;
+    margin-bottom: 28px;
 }
 
 #testimonials h3 {
@@ -662,12 +656,9 @@ header .copyright {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 5px;
     border: none;
-}
-
-#testimonials .comments .feedback button p {
-    width: 285px;
+    width: 298px;
     margin: 0;
-    padding: 15px 30px;
+    padding: 17px 30px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -756,7 +747,7 @@ footer .wrap-first button {
 footer .wrap-first .media ul {
     padding: 0;
     margin: 0;
-    padding-top: 35px;
+    padding-top: 37px;
 }
 
 footer .wrap-first .media li {
@@ -835,7 +826,7 @@ footer .wrap-second a {
     cursor: pointer;
 }
 
-footer .wrap-second ul .about{
+footer .wrap-second ul .about, header ul .about{
     color: #F9804B;
 }
 
