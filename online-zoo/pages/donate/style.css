@@ -170,6 +170,7 @@ header .copyright {
 
 #feed-friend .feed .pandas .four-pandas {
     margin-top: 45px;
+    margin-right: 10px;
 }
 
 #feed-friend .feed .pandas p {
@@ -195,7 +196,7 @@ header .copyright {
 
 #feed-friend .feed .pandas .multiplication {
     margin-top: 26px;
-    margin-right: 115px;
+    margin-right: 70px;
     width: 14px;
     height: 14px;
     background-image: url(../../assets/svg/multiplication.svg);
@@ -205,11 +206,131 @@ header .copyright {
 }
 
 #feed-friend .feed .pandas .panda {
-    margin-right: 20px;
+    margin-right: 82px;
     width: 284px;
     height: 246px;
     background-image: url(../../assets/svg/panda.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 284px 246px;
+}
+
+#feed-friend .feed .amount {
+    padding-top: 29px;
+}
+
+#feed-friend .feed .amount p {
+    padding-left: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+#feed-friend .feed .amount .how-many {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-left: 3px;
+    width: 976px;
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+}
+
+#feed-friend .feed .amount .how-many .gray {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 915px;
+    height: 2px;
+    background: #72828E;
+}
+
+#feed-friend .feed .amount .how-many .gray .yellow-circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #FFEE2E;
+}
+
+#feed-friend .feed .amount .how-many .gray .first {
+    margin-left: -4px;
+}
+
+
+#feed-friend .feed .amount .how-many .active {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+}
+  
+#feed-friend .feed .amount .how-many .active .b-circle-line {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px solid #FE9013;
+    border-radius: 50%;
+}
+
+#feed-friend .feed .amount .how-many .active .b-circle-line:nth-of-type(2) {
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    bottom: -16px;
+}
+
+#feed-friend .feed .amount .price {
+    display: flex;
+    gap: 58px;
+    padding-top: 13px;
+}
+
+#feed-friend .feed .amount .price .number {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+}
+
+#feed-friend .feed .amount .price .active {
+    margin-left: -3px;
+    margin-right: -2px;
+    color: #FE9013;
+}
+
+#feed-friend .feed .amount .price .number:nth-of-type(4){
+    margin-right: 13px;
+}
+
+#feed-friend .feed .amount .price .number:nth-of-type(5){
+    margin-right: 13px;
+}
+
+#feed-friend .feed .amount .price .number:nth-of-type(6){
+    margin-right: 13px;
+}
+
+#feed-friend .feed .amount .price .number:nth-of-type(7){
+    margin-right: 27px;
+}
+
+#feed-friend .feed .donate input[type="number"]::-webkit-outer-spin-button,
+[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
