@@ -76,6 +76,27 @@ header a {
     cursor: pointer;
 }
 
+header ul li:nth-child(4) {
+    margin-left: -4px;
+ }
+
+header ul li:nth-child(5) {
+   margin-left: -3px;
+   margin-right: 8px;
+}
+
+header .container ul .choose {
+    color: #F9804B;
+}
+
+header a:hover {
+    color: yellow;
+}
+
+header a:active {
+    color: #F9804B;
+}
+
 header .copyright {
     margin-left: 370px;
 }
@@ -88,6 +109,10 @@ header .copyright {
     background-repeat: no-repeat;
     background-position: 0 center;
     background-size: 100% 100%;
+}
+
+#preview h2 {
+    margin: 0;
 }
 
 #feed-friend {
@@ -253,10 +278,27 @@ header .copyright {
 }
 
 #feed-friend .feed .amount .how-many .gray .yellow-circle {
+    position: relative;
     border-radius: 50%;
     width: 10px;
     height: 10px;
     background: #FFEE2E;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.yellow-circle:before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    z-index: 40;
+}
+
+#feed-friend .feed .amount .how-many .gray .yellow-circle:hover {
+    background: #008000;
 }
 
 #feed-friend .feed .amount .how-many .gray .first {
@@ -352,6 +394,7 @@ input[type="number"] {
     margin-right: 70px;
     -moz-appearance: textfield;
     padding: 16px 82px 16px 10px;
+    width: 276px;
     border-radius: 2px;
     border: 1px solid #929699;
     outline: none;
@@ -365,6 +408,17 @@ input[type="number"] {
     background-image: url(../../assets/svg/dollar.svg);
     background-repeat: no-repeat;
     background-position: 251px 16px;
+}
+
+input[type="number"]:focus {
+    border: 1px solid #4B9200;
+    background-image: url(../../assets/svg/dollar-green.svg);
+    background-repeat: no-repeat;
+    background-position: 251px 16px;
+}
+
+input[type="number"]:focus::placeholder {
+    color: #4B9200;
 }
 
 #feed-friend .feed .donate form p {
@@ -409,6 +463,15 @@ input[type="number"] {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
+}
+
+#feed-friend .feed .donate .feed-now button:hover {
+    background: #E47209;
+}
+
+#feed-friend .feed .donate .feed-now button:active {
+    background: #4B9200;
 }
 
 #feed-friend .feed .donate .feed-now p {
@@ -424,6 +487,8 @@ input[type="number"] {
 }
 
 footer {
+    position: relative;
+    z-index: 100;
     padding-top: 41px;
     background: #111115;
 }
@@ -445,6 +510,10 @@ footer h2{
     line-height: 120%;
     text-align: center;
     color: #fff;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 footer h3{
@@ -484,6 +553,14 @@ footer .wrap-first button {
     color: #fff;
 }
 
+footer .wrap-first button:hover {
+    background: #E47209;
+}
+
+footer .wrap-first button:active {
+    background: #4B9200;
+}
+
 footer .wrap-first .media ul {
     padding: 0;
     margin: 0;
@@ -495,9 +572,11 @@ footer .wrap-first .media li {
     gap: 12px;
     align-items: center;
     padding-top: 10px;
+    cursor: pointer;
 }
 
-footer .wrap-first .media a {
+footer .wrap-first .media p {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -509,11 +588,27 @@ footer .wrap-first .media a {
     cursor: pointer;
 }
 
+footer .wrap-first .media li:hover p {
+    color: #E47209;
+}
+
+footer .wrap-first .media li:active p {
+    color: #4B9200;
+}
+footer .wrap-first .media li:hover .icon-media {
+    background-color: #E47209;
+}
+
+footer .wrap-first .media li:active .icon-media {
+    background-color: #4B9200;
+}
+
 footer .wrap-first .media .icon-media {
     width: 26px;
     height: 26px;
     background: rgba(196, 196, 196, 0.5);
     border-radius: 50%;
+    transition: 1s;
 }
 
 footer .wrap-first .media .facebook {
@@ -566,7 +661,11 @@ footer .wrap-second a {
     cursor: pointer;
 }
 
-footer .wrap-second ul .about, header ul .about{
+footer .wrap-second a:hover, footer .wrap-second a:hover {
+    color: yellow;
+}
+
+footer .wrap-second a:active, footer .wrap-second a:active {
     color: #F9804B;
 }
 
@@ -581,6 +680,7 @@ footer .wrap-third {
 footer .wrap-third input[name="email"]{
     padding: 10px;
     padding-right: 33px;
+    width: 227px;
     border-radius: 2px;
     background: linear-gradient(#111115 0 0) padding-box, /*this is your grey background*/ linear-gradient(to left, #F9804B 1.49%, #FE9013 101.44%) border-box;
     border: 0.7px solid transparent;
@@ -591,6 +691,14 @@ footer .wrap-third input[name="email"]{
     font-size: 16px;
     line-height: 140%;
     color: #BDBDBD;
+}
+
+footer .wrap-third input[name="email"]:focus {
+    border: 1px solid #4B9200;
+}
+
+footer .wrap-third input[name="email"]:focus::placeholder {
+    color: #4B9200;
 }
 
 footer .wrap-third input::placeholder{
@@ -614,6 +722,11 @@ footer .wrap-third input[type="submit"]{
     font-size: 16px;
     line-height: 140%;
     color: #D31414;
+}
+
+footer .wrap-third input[type="submit"]:hover{
+    border: 1px solid #E47209;
+    color: #E47209;
 }
 
 footer .wrap-third .subscription p {
