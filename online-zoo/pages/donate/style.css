@@ -742,3 +742,211 @@ footer .wrap-third .subscription p {
 footer .wrap-third .subscription .author{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header .copyright {
+        margin-left: 274px;
+    }
+
+    header ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 34px;
+        list-style: none;
+    }
+
+    header .container {
+        gap: 71px;
+    }
+
+    #feed-friend .feed .amount .how-many {
+        width: 850px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        width: 830px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        gap: 98px;
+    }
+
+    #feed-friend .feed .amount .price {
+        gap: 44px;
+    }
+
+    footer .subcribe {
+        position: absolute;
+        top: 33px;
+        right: 30px;
+     }
+ 
+     footer .wrap-second ul {
+         margin-left: 23px;
+     }
+ 
+     footer .subscription {
+         margin-left: 10px;
+     }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .container {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    header .copyright {
+        margin-left: 205px;
+    }
+
+    header nav {
+        margin-left: -10px;
+    }
+
+    header ul {
+        gap: 49px;
+    }
+
+    #preview {
+        width: auto;
+        min-height: 390px;
+        margin-top: 0px;
+        background: url(../../assets/images/panda-donate-small-desc.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    #feed-friend {
+        padding-bottom: 31px;
+    }
+
+    #feed-friend h2 {
+        width: 829px;
+    }
+
+    #feed-friend p {
+        margin-top: 30px;
+    }
+
+    #feed-friend .donat {
+        padding-top: 45px;
+        padding-bottom: 38px;
+    }
+
+    #feed-friend .feed {
+        padding: 21px 20px 0px 46px;
+    }
+
+    #feed-friend .feed .sec {
+        margin: 0;
+        margin-top: 0px;
+        width: 849px;
+        font-weight: 400;
+    }
+
+    #feed-friend .feed .pandas {
+        padding-left: 92px;
+    }
+
+    #feed-friend .feed .amount p {
+        margin-top: 30px;
+        padding-left: 18px;
+    }
+
+    #feed-friend .feed .amount {
+        padding-top: 11px;
+    }
+
+    #feed-friend .feed .amount .how-many {
+        width: 810px;
+        margin-left: 19px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        width: 790px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(2) {
+        display: none;
+    }
+
+    #feed-friend .feed .amount .how-many .gray .first {
+        margin-left: -1px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        gap: 121px;
+    }
+
+    #feed-friend .feed .amount .price .number:nth-child(1) {
+        display: none;
+    }
+
+    #feed-friend .feed .amount .price .number:nth-child(2) {
+        margin-left: 18px;
+    }
+
+    #feed-friend .feed .amount .price {
+        gap: 57px;
+    }
+
+    #feed-friend .feed .amount .price .number:nth-of-type(7) {
+        margin-right: 31px;
+    }
+
+    input[type="number"] {
+        margin-right: 28px;
+        padding: 14px 82px 16px 10px;
+        width: 273px;
+    }
+
+    #feed-friend .feed .donate form .time {
+        margin-left: 40px;
+        padding-top: 15px;
+    }
+
+    #feed-friend .feed .donate .feed-now {
+        padding-top: 27px;
+        margin-right: 21px;
+    }
+
+    #feed-friend .feed .donate .feed-now p {
+        padding-bottom: 45px;
+    }
+
+    footer .wrap-first {
+        margin-left: 17px;
+    }
+
+    footer .container {
+        width: 970px;
+        margin: 0 auto;
+    }
+
+    footer .wrap-second ul {
+        margin-left: 2px;
+    }
+
+    footer .wrap-second ul {
+        gap: 50px;
+    }
+
+    footer .wrap-third {
+        margin-left: 64px;
+    }
+
+    footer .subcribe {
+        top: 42px;
+        right: 63px;
+    }
+}
