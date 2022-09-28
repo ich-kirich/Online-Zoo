@@ -1042,10 +1042,6 @@ footer .wrap-third .subscription .author{
 }
 
 @media screen and (max-width: 1599px) {
-    html, body {
-        min-width: auto;
-    }
-
     #backstage .flowers {
         display: none;
     }
@@ -1087,5 +1083,169 @@ footer .wrap-third .subscription .author{
         right: 403px;
         z-index: 500;
         background-image: url(../../assets/svg/right-arrow.svg);
+    }
+
+    #pets .flower-left {
+        position: absolute;
+        left: -60;
+        bottom: 0;
+        width: 386px;
+        height: 202px;
+        background: url(../../assets/images/palm-small-desc.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+    #pets .flower-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 286px;
+        height: 248px;
+        background: url(../../assets/images/flower-right.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header .copyright {
+        margin-left: 274px;
+    }
+
+    header ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 34px;
+        list-style: none;
+    }
+
+    header .container {
+        gap: 71px;
+    }
+
+    #preview {
+        width: auto;
+        min-height: 584px;
+        margin-top: -54px;
+        background: url(../../assets/images/background-preview-small-desc.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    #preview button {
+        top: 420px;
+        left: 125px;
+    }
+
+    #preview .circle {
+        position: relative;
+        width: 398px;
+        height: 388px;
+        top: 65px;
+        left: 467px;
+        background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+        border-radius: 50%;
+    }
+
+    #preview h2 {
+        font-weight: 700;
+        font-size: 85px;
+        line-height: 75%;
+    }
+
+    #backstage .container {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        justify-content: space-around;
+    }
+
+    #backstage .pict {
+        width: 455px;
+        height: 408px;
+        background: url(../../assets/images/bamboo-cap-small-desc.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    #backstage h2 {
+        font-size: 48px;
+    }
+
+    #backstage .text {
+        width: 454px;
+    }
+
+    #pets img {
+        border-radius: 5px 5px 0px 0px;
+        width: 294px;
+        height: 294px;
+        transition: 0.5s;
+    }
+
+    #pets .right, #pets .right:hover {
+        top: 358px;
+        right: 353px;
+    }
+
+    #pets .left, #pets .left:hover {
+        top: 358px;
+        left: 353px;
+    }
+
+    #pets .flower-left {
+        width: 211px;
+    }
+
+    #feed-friend {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+    }
+
+    #feed-friend .container {
+        width: 964px;
+        margin: 0 auto;
+    }
+
+    #feed-friend .feed {
+        padding: 49px 20px 59px 49px;
+    }
+
+    #feed-friend .how-works .pictures {
+        padding-left: 41px;
+    }
+
+    #feed-friend .feed-now {
+        margin-right: 48px;
+    }
+
+    #testimonials .review .comment:nth-child(4) {
+        display: none;
+    }
+
+    footer .subcribe {
+       position: absolute;
+       top: 33px;
+       right: 30px;
+    }
+
+    footer .wrap-second ul {
+        margin-left: 23px;
+    }
+
+    footer .subscription {
+        margin-left: 10px;
     }
 }
