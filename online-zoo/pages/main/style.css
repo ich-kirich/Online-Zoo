@@ -1249,3 +1249,240 @@ footer .wrap-third .subscription .author{
         margin-left: 10px;
     }
 }
+
+@media screen and (max-width: 1017px) {
+
+    .container {
+        width: 938px;
+        margin: 0 auto;
+    }
+
+    header {
+        z-index: 100;
+    }
+
+    header .copyright {
+        margin-left: 209px;
+    }
+
+    header .container {
+        gap: 23px;
+    }
+
+    header ul {
+        gap: 48px;
+    }
+
+    #preview {
+        min-height: 556px;
+    }
+
+    #preview .circle {
+        position: relative;
+        width: 367px;
+        height: 368px;
+        top: 41px;
+        left: 425px;
+    }
+
+    #preview h2 {
+        position: absolute;
+        top: 54px;
+        left: 65px;
+    }
+
+    #preview button {
+        top: 414px;
+        left: 109px;
+        font-size: 16px;
+    }
+
+    #backstage {
+        margin-top: 109px;
+    }
+
+    #backstage h2 {
+        margin-top: -7px;
+    }
+
+    #backstage .container {
+        gap: 29px;
+    }
+
+    #backstage .big-p {
+        margin-top: 27px;
+    }
+
+    #backstage h3 {
+        margin-bottom: 34px;
+    }
+
+    #pets {
+        margin-top: 124px;
+        padding-bottom: 139px;
+    }
+
+    #pets .animals {
+        row-gap: 91px;
+    }
+
+    #pets .left, #pets .left:hover {
+        top: 368px;
+        left: 322px;
+    }
+
+    #pets .right, #pets .right:hover {
+        top: 368px;
+        right: 321px;
+    }
+
+    #pets .choose-fav button {
+        padding: 16px 57px;
+    }
+
+    #pets .flower-left {
+        width: 194px;
+    }
+
+    #pets .flower-right {
+        width: 246px;
+        height: 183px;
+    }
+
+    #feed-friend {
+        padding-bottom: 50px;
+    }
+
+    #feed-friend .container {
+        width: 939px;
+        margin: 0 auto;
+    }
+
+    #feed-friend .feed {
+        padding: 23px 20px 51px 49px;
+    }
+
+    #feed-friend h2 {
+        margin-top: 8px;
+        margin-right: 30px;
+    }
+
+    #feed-friend .first-p {
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+
+    #feed-friend .second-p {
+        width: 815px;
+        margin: 0;
+    }
+
+    #feed-friend .third-p, #feed-friend .third-p a {
+        margin-top: 9px;
+        width: 823px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    #feed-friend .how-works {
+        padding-top: 26px;
+    }
+
+    #feed-friend .how-works h3 {
+        margin-right: 31px;
+    }
+
+    #feed-friend .feed-now {
+        margin-right: 30px;
+        padding-top: 54px;
+    }
+
+    #feed-friend .feed-now button {
+        padding: 16px 50px;
+        width: 298px;
+    }
+
+    #testimonials {
+        padding-bottom: 115px;
+    }
+
+    #testimonials h3 {
+        margin-bottom: 30px;
+    }
+
+    #testimonials .review {
+        gap: 30px;
+    }
+
+    #testimonials .comment {
+        width: 292px;
+    }
+
+    #testimonials .comment:nth-child(2) {
+        padding: 8px 14px 20px 13px;
+    }
+
+    #testimonials .comment:nth-child(2) .text p {
+        margin-top: 9px;
+        width: 250px;
+    }
+
+    #testimonials .comments .comments-bar {
+        width: 391px;
+        margin-right: 14px;
+    }
+
+    #testimonials .review {
+        padding-bottom: 19px;
+    }
+
+    #testimonials .comments .comments-bar .choose {
+        width: 77px;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    #testimonials .comments .comments-bar {
+        margin-bottom: 51px;
+    }
+    
+    #testimonials .leaf {
+        position: absolute;
+        right: 0;
+        bottom: -111px;
+        width: 196px;
+        height: 327px;
+        background: url(../../assets/images/leav-smal-desc.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    footer .wrap-first {
+        margin-left: 30px;
+    }
+
+    footer .container {
+        width: 970px;
+        margin: 0 auto;
+    }
+
+    footer .wrap-second ul {
+        margin-left: -9px;
+    }
+
+    footer .wrap-second ul {
+        gap: 50px;
+    }
+
+    footer .wrap-third {
+        margin-left: 75px;
+    }
+
+    footer .subcribe {
+        position: absolute;
+        top: 42px;
+        right: 50px;
+    }
+}
