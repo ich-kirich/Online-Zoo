@@ -1040,3 +1040,52 @@ footer .wrap-third .subscription p {
 footer .wrap-third .subscription .author{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1599px) {
+    html, body {
+        min-width: auto;
+    }
+
+    #backstage .flowers {
+        display: none;
+    }
+
+    #pets .animals {
+        row-gap: 70px;
+    }
+
+    #pets .right {
+        z-index: 500;
+        position: absolute;
+        top: 431px;
+        right: 403px;
+    }
+
+    #pets .button:hover{
+        background: #ff0000;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #pets .button:active{
+        background: #4B9200;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #pets .left, #pets .left:hover {
+        position: absolute;
+        z-index: 500;
+        top: 431px;
+        left: 398px;
+        background-image: url(../../assets/svg/left-arrow.svg);
+    }
+    
+    #pets .right, #pets .right:hover {
+        position: absolute;
+        top: 431px;
+        right: 403px;
+        z-index: 500;
+        background-image: url(../../assets/svg/right-arrow.svg);
+    }
+}
