@@ -88,6 +88,10 @@ header .copyright {
     margin-left: 370px;
 }
 
+#nav-toggle {
+    display: none;
+}
+
 #preview {
     width: auto;
     min-height: 754px;
@@ -792,6 +796,7 @@ footer .container {
     flex-direction: row;
     align-items: flex-end;
     padding-bottom: 50px;
+    justify-content: space-between;
 }
 
 footer h2{
@@ -931,6 +936,17 @@ footer .wrap-first .media .youtube {
     background-size: 18px 12px;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+footer .wrap-first .wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .wrap-sec-third {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 footer .wrap-second ul {
@@ -1111,6 +1127,7 @@ footer .wrap-third .subscription .author{
 
 @media screen and (max-width: 1200px) {
     .container {
+        z-index: 300;
         width: 1000px;
         margin: 0 auto;
     }
@@ -1233,6 +1250,10 @@ footer .wrap-third .subscription .author{
 
     #testimonials .review .comment:nth-child(4) {
         display: none;
+    }
+
+    #testimonials .leaf {
+        height: 397px;
     }
 
     footer .subcribe {
@@ -1485,4 +1506,369 @@ footer .wrap-third .subscription .author{
         top: 42px;
         right: 50px;
     }
+}
+
+@media screen and (max-width: 990px) {
+
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    header nav {
+        margin-left: 10px;
+    }
+
+    header ul {
+        gap: 35px;
+    }
+
+    header .copyright {
+        margin-left: 100px;
+    }
+
+    #preview .circle {
+        width: 339px;
+        height: 327px;
+    }
+
+    #preview h2 {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 75%;
+    }
+
+    #preview button {
+        top: 363px;
+        left: 34px;
+        font-size: 16px;
+    }
+
+    #pets .animals {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 106px;
+        row-gap: 89px;
+    }
+
+    #pets .photo-animal:nth-child(5), #pets .photo-animal:nth-child(6) {
+        display: none;
+    }
+
+    #pets .left, #pets .left:hover {
+        left: 286px;
+    }
+
+    #pets .right, #pets .right:hover {
+        right: 286px;
+    }
+
+    #feed-friend .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    #feed-friend .second-p {
+        width: auto;
+    }
+
+    #feed-friend .third-p, #feed-friend .third-p a {
+        width: auto;
+    }
+
+    #testimonials .review {
+        gap: 10px;
+    }
+
+    #testimonials .comment {
+        width: 265px;
+        padding: 15px 0px 20px 2px;
+    }
+
+    #testimonials .comment:nth-child(2) {
+        padding: 8px 0px 20px 0px;
+    }
+
+    footer .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    footer .wrap-first {
+        margin-left: 0px;
+    }
+
+    footer .subcribe {
+        display: none;
+    }
+
+    footer .wrap-third {
+        margin-left: 0px;
+    }
+
+    footer .subscription {
+        margin-left: 10px;
+    }
+
+    footer .wrap-third .subscription p {
+        font-size: 13px;
+    }
+
+    footer .wrap-second ul {
+        gap: 31px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header .container nav {
+        margin: 10px 0 0 0px;
+    }
+
+    header nav {
+        z-index: 60;
+        top: 0;
+        margin: 0;
+        position: fixed;
+        right: -100vw;
+        width: 165px;
+        padding: 44px 15px 30px 0;
+        display: block !important;
+        background: #F2785C;
+        box-shadow: 0px 4px 3px rgb(13 96 111 / 25%);
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    header .logo {
+        border: none;
+    }
+    
+
+    #nav-toggle {
+        position: absolute;
+        right: 61px;
+        top: 11px;
+        display: block;
+        width: 35px;
+        height: 32px;
+    }
+
+    #nav-toggle span {
+        position: absolute;
+        left: 4px;
+        top: 8px;
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+    #nav-toggle span:nth-child(2) {
+        top: 15px;
+    }
+
+    #nav-toggle span:nth-child(3) {
+        top: 22px;
+    }
+
+    #preview {
+        min-height: 473px;
+    }
+
+    #preview .circle {
+        width: 279px;
+        height: 279px;
+        top: 70px;
+        left: 237px;
+    }
+
+    #preview h2 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 75%;
+    }
+
+    #preview button {
+        top: 311px;
+        left: -226px;
+        font-size: 16px;
+    }
+
+    #backstage .pict {
+        display: none;
+    }
+
+    #backstage .flowers {
+        display: block;
+        right: 0px;
+    }
+
+    #backstage .container {
+        gap: 0;
+        justify-content: flex-start;
+    }
+
+    #backstage .flowers {
+        width: 126px;
+    }
+
+    #pets .animals {
+        column-gap: 30px;
+        row-gap: 89px;
+    }
+
+    #pets .photo-animal {
+        width: 280px;
+    }
+
+    #pets img {
+        width: 280px;
+    }
+
+    #pets .right, #pets .right:hover {
+        right: 223px;
+    }
+
+    #pets .left, #pets .left:hover {
+        left: 223px;
+    }
+
+    #pets .choose-fav {
+        z-index: 300;
+    }
+
+    #pets .flower-left {
+        left: -81px;
+    }
+
+    #pets .flower-right {
+        right: 0px;
+    }
+    
+    #feed-friend .container {
+        width: 100%;
+    }
+
+    #feed-friend .feed {
+        padding: 10px 20px 60px 20px;
+    }
+
+    #feed-friend .how-works .pictures {
+        position: relative;
+        gap: 42px;
+        padding-left: 0px;
+    }
+
+    #feed-friend .how-works .arrow:nth-child(2) {
+        position: absolute;
+        top: -32px;
+        left: 160px;
+        margin-bottom: 0px;
+        width: 70px;
+        height: 70px;
+        background-image: url(../../assets/svg/arrow-tabl.svg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    #feed-friend .how-works .arrow:nth-child(4) {
+        position: absolute;
+        top: -32px;
+        left: 374px;
+        margin-bottom: 0px;
+        width: 70px;
+        height: 70px;
+        background-image: url(../../assets/svg/arrow-tabl.svg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    #testimonials .review {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        padding-bottom: 27px;
+    }
+
+    #testimonials .comment {
+        width: 100%;
+        height: 109px;
+        padding: 15px 0px 20px 2px;
+    }
+
+    #testimonials .comment .text {
+        padding-top: 14px;
+        height: 109px;
+        overflow: hidden;
+    }
+
+    #testimonials .comment:nth-child(2) .text p {
+        width: auto;
+    }
+
+    #testimonials .comments .comments-bar {
+       display: none;
+    }
+
+    #testimonials .leaf {
+        height: 258px;
+    }
+
+    footer .container {
+        display: flex;
+        width: 610px;
+        margin: 0 auto;
+        padding: 0;
+        gap: 67px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .wrap-first {
+        display: flex;
+        flex-direction: row;
+        gap: 277px;
+    }
+
+    footer .wrap-first .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .wrap-first .media p {
+       display: none;
+    }
+
+    footer .wrap-first .donate {
+        padding-top: 32px;
+    }
+
+    footer .wrap-first .media ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .wrap-sec-third {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 73px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
 }
