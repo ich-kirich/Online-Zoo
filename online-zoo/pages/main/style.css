@@ -1870,5 +1870,327 @@ footer .wrap-third .subscription .author{
 }
 
 @media screen and (max-width: 640px) {
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font-size: 12.2899px;
+        padding: 3px 5px 3px 0px;
+    }
+
+    header img, footer img {
+        position: absolute;
+        left: 5px;
+        top: 18px;
+        width: 6px;
+        height: 14px;
+    }
+
+    header .logo, footer .logo {
+        width: auto;
+    }
+
+    #nav-toggle {
+        width: auto;
+        height: auto;
+        right: 42px;
+        top: 3px;
+    }
+
+    #nav-toggle span {
+        position: absolute;
+        left: 4px;
+        top: 8px;
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+    #nav-toggle span:nth-child(2) {
+        top: 12px;
+    }
+
+    #nav-toggle span:nth-child(3) {
+        top: 16px;
+    }
+
+    #preview {
+        min-height: 392px;
+    }
+
+    #preview .circle {
+        width: 237px;
+        height: 237px;
+        top: 61px;
+        left: 310px;
+    }
+
+    #preview h2 {
+        position: absolute;
+        top: 42px;
+        left: 44px;
+        font-weight: 700;
+        font-size: 54.2894px;
+        line-height: 75%;
+    }
+
+    #preview button {
+        top: 237px;
+        left: -311px;
+    }
+
+    #backstage {
+        margin-top: 66px;
+    }
+
+    #backstage .text {
+        z-index: 400;
+    }
+
+    #backstage .flowers {
+        position: absolute;
+        top: -65px;
+        height: 476px;
+        background: url(../../assets/images/flower_foto-tabl.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+
+    #backstage h3 {
+        margin-top: 34px;
+        margin-bottom: 0px;
+    }
+
+    #backstage .big-p {
+        width: 495px;
+        margin-top: 18px;
+    }
+
+    #pets {
+        margin-top: 61px;
+        padding-bottom: 101px;
+    }
+
+    #pets .animals {
+        margin-bottom: 62px;
+    }
+
+    #pets .photo-animal {
+        width: 285px;
+        height: 333px;
+    }
+
+    #pets img {
+        width: 285px;
+        height: 285px;
+    }
+
+    #pets .text {
+        padding: 2px 10px 18px 13px;
+    }
+
+    #pets h2 {
+        font-size: 12px;
+    }
+
+    #pets p {
+        font-size: 12px;
+    }
+
+    #pets .icon .banana {
+        margin-right: 8px;
+        margin-bottom: 12px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #pets .icon .meat {
+        margin-right: 6px;
+        margin-bottom: 12px;
+        width: 35px;
+        height: 28px;
+    }
+
+    #pets .left, #pets .left:hover {
+        top: 344px;
+    }
+
+    #pets .right, #pets .right:hover {
+        top: 344px;
+    }
+
+    #pets .flower-left {
+        left: -61px;
+    }
+
+    #pets .flower-right {
+        width: 175px;
+        height: 131px;
+    }
+
+    #feed-friend {
+        padding-top: 20px;
+        padding-bottom: 19px;
+        margin-bottom: 63px;
+    }
+
+    #feed-friend h2 {
+        margin-top: 0px;
+        margin-right: 0px;
+        font-size: 42px;
+    }
+
+    #feed-friend .first-p {
+        margin-top: 18px;
+        margin-bottom: 21px;
+        font-size: 22px;
+    }
+
+    #feed-friend .how-works {
+        padding-top: 17px;
+    }
+
+    #feed-friend .how-works h3 {
+        margin-right: 0px;
+        padding-bottom: 15px;
+    }
+
+    #feed-friend .how-works .pictures {
+        gap: 42px;
+    }
+
+    #feed-friend .how-works .arrow:nth-child(2) {
+        top: -34px;
+        left: 137px;
+        width: 89px;
+    }
+
+    #feed-friend .how-works .arrow:nth-child(4) {
+        top: -36px;
+        left: 345px;
+        width: 89px;
+    }
+
+    #feed-friend .feed-now {
+        margin-right: 0px;
+        padding-top: 29px;
+    }
+
+    #testimonials {
+        padding-bottom: 56px;
+    }
+
+    #testimonials .review {
+        gap: 17px;
+        padding-bottom: 41px;
+    }
+
+    #testimonials .comment {
+        width: 100%;
+        height: 106px;
+        padding: 12px 0px 20px 10px;
+    }
+
+    #testimonials .comment .text {
+        padding-top: 7px;
+        height: 109px;
+        overflow: hidden;
+    }
+
+    #testimonials .comment .text p {
+        width: 556px;
+        padding-left: 7px;
+        line-height: 137%;
+    }
+
+    #testimonials .comment:nth-child(2) {
+        width: 100%;
+        height: 106px;
+        padding: 8px 0px 20px 10px;
+    }
+
+    #testimonials .comment:nth-child(2) .text {
+        padding-top: 3px;
+    }
+
+    #testimonials .comments .feedback {
+        align-self: center;
+    }
+
+    #testimonials .comments .feedback button {
+        width: 240px;
+    }
+
+    #testimonials .leaf {
+        height: 205px;
+        bottom: -94px;
+        width: 107px;
+    }
+
+    footer {
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+
+    footer .wrap-first .wrap {
+        align-items: flex-start;
+    }
+
+    footer .logo {
+        display: flex;
+    }
+
+    footer .wrap-first {
+        gap: 276px;
+    }
+
+    footer img {
+        position: absolute;
+        left: 11px;
+        top: 24px;
+        width: 11px;
+        height: 19px;
+    }
+
+    footer .wrap-first .media ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .wrap-first .media li {
+        padding-top: 0px;
+    }
+
+    footer .container {
+        gap: 44px;
+    }
+
+    footer .wrap-sec-third {
+        gap: 84px;
+    }
+
+    footer .wrap-second ul {
+        gap: 37px;
+    }
+
+    footer .wrap-second ul li:nth-child(4){
+        margin-right: 0px;
+    }
+
+    footer .wrap-third .subscription p {
+        font-size: 16px;
+    }
+
+    footer .subscription {
+        margin-left: -14px;
+        margin-bottom: 1px;
+    }
     
 }
