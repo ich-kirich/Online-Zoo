@@ -1113,6 +1113,11 @@ footer .wrap-third .subscription .author{
         padding: 0;
     }
 
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
     header .container nav {
         margin: 10px 0 0 0px;
     }
@@ -1122,7 +1127,7 @@ footer .wrap-third .subscription .author{
         top: 0;
         margin: 0;
         position: fixed;
-        right: -100vw;
+        right: -200vw;
         width: 165px;
         padding: 44px 15px 30px 0;
         display: block !important;
@@ -1522,5 +1527,110 @@ footer .wrap-third .subscription .author{
 
     footer .wrap-first .media li {
         padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .container {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    #feed-friend .container {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        gap: 95px;
+    }
+
+    #feed-friend .feed .amount .price {
+        gap: 0px;
+    }
+
+    #feed-friend .feed .pandas .panda {
+        margin-right: 0px;
+        width: 100%;
+        height: 246px;
+        background-image: url(../../assets/svg/panda.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 151px 111px;
+    }
+
+    footer .container {
+        width: 400px;
+    }
+
+    footer .wrap-first {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .wrap-first .media {
+        position: absolute;
+        top: 27%;
+        left: 34%;
+    }
+
+    footer .wrap-first .media ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    footer .wrap-sec-third {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .wrap-sec-third .wrap-second{
+        order: 2;
+    }
+
+    footer .wrap-first .donate {
+        order: 2;
+        padding-top: 0px;
+    }
+
+    footer .wrap-first .wrap {
+        align-items: flex-start;
+        gap: 60px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    .container {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    footer .container {
+        width: 300px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    #feed-friend .feed .pandas .four-pandas {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #feed-friend .feed .pandas .multiplication {
+        margin-right: 0px;
+    }
+
+    #feed-friend .feed .amount .how-many .gray {
+        gap: 45px;
     }
 }
