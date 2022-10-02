@@ -1876,6 +1876,14 @@ footer .wrap-third .subscription .author{
         margin: 0 auto;
     }
 
+    
+    header{
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        top: 0;
+    }
+
     header h1 {
         font-size: 12.2899px;
         padding: 3px 5px 3px 0px;
@@ -1921,6 +1929,7 @@ footer .wrap-third .subscription .author{
 
     #preview {
         min-height: 392px;
+        margin-top: -18px;
     }
 
     #preview .circle {
@@ -2425,7 +2434,7 @@ footer .wrap-third .subscription .author{
     }
 
     #preview {
-        margin-top: 0px;
+        margin-top: 34px;
         min-height: 187px;
         background: url(../../assets/images/background-preview-mob.jpg);
         background-repeat: no-repeat;
