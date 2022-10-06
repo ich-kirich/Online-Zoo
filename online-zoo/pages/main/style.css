@@ -13,10 +13,15 @@ html, body {
     width: 1160px;
 }
 
+.menu-shadow {
+    display: none;
+}
+
 header {
     position: relative;
     padding: 14px 0;
     background-color: #000000;
+    transition: 1s;
 }
 
 header .container{
@@ -54,6 +59,7 @@ header img, footer img {
 header nav {
     margin-left: 40px;
 }
+
 
 header ul {
     margin: 0;
@@ -1639,22 +1645,88 @@ footer .wrap-third .subscription .author{
     }
 
     header nav {
-        z-index: 60;
         top: 0;
         margin: 0;
         position: fixed;
-        right: -100vw;
-        width: 165px;
-        padding: 44px 15px 30px 0;
-        display: block !important;
-        background: #F2785C;
-        box-shadow: 0px 4px 3px rgb(13 96 111 / 25%);
-        border-radius: 10px;
-        transition: 0.5s;
+        right: -100vh;
     }
 
     header .logo {
-        border: none;
+        border: 0;
+    }
+
+    .show {
+        z-index: 1000;
+        top: 0;
+        margin: 0;
+        position: fixed;
+        right: 0;
+        width: 100%;
+        padding: 10px 15px 40px 0;
+        display: block !important;
+        background: #FFF;
+        box-shadow: 0px 4px 3px rgb(13 96 111 / 25%);
+        border-radius: 10px;
+        transition: 0.1s;
+    }
+
+    .show .container {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+
+    .show .logo {
+        border: 1px solid #FE9013;
+    }
+
+    .show h1 {
+        color: #FE9013;
+        font-size: 19.0145px;
+    }
+
+    .show img {
+        position: absolute;
+        left: 10px;
+        top: 24px;
+        width: 12px;
+        height: 21px;
+        filter: invert(37%) sepia(23%) saturate(2604%) hue-rotate(350deg) brightness(102%) contrast(99%);
+    }
+
+    .show nav {
+        position: static;
+    }
+
+    .show ul {
+        gap: 15px;
+    }
+
+    .show a, .show ul .about {
+        color: #333B41;
+    }
+
+    .show .copyright {
+        margin-left: 0px;
+    }
+
+    .show a:hover {
+        color: #ff0000;
+    }
+    
+    .show a:active {
+        color: #F9804B;
+    }
+
+    .active{
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 900;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 1;
     }
     
 
@@ -2208,6 +2280,10 @@ footer .wrap-third .subscription .author{
     .container {
         width: 400px;
         margin: 0 auto;
+    }
+
+    .show img {
+        left: 6px;
     }
 
     #preview button {

@@ -13,11 +13,16 @@ html, body {
     width: 1160px;
 }
 
+.menu-shadow {
+    display: none;
+}
+
 header {
     position: relative;
     padding: 14px 0;
     background-color: #000000;
     z-index: 100;
+    transition: 0.5s;
 }
 
 header .container{
@@ -439,34 +444,19 @@ input[type="number"]:focus::placeholder {
 
 #feed-friend .feed .donate form p input[type="radio"] {
     margin-right: 10px;
-}
-
-#feed-friend .feed .donate form p input[type="radio"]::after {
-    position: relative;
-    top: -1px;
-    right: 1px;
-    background: rgba(255, 230, 225, 0.9);
-    content: '';
-    display: inline-block;
-    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
     border: 1px solid #FE9013;
-    width: 12px;
-    height: 12px;
-    border-radius: 15px;
+    transition: 0.2s all linear;
 }
 
-#feed-friend .feed .donate form p input[type="radio"]:checked::after {
-    position: relative;
-    top: -3px;
-    right: -2px;
-    background: #4B9200;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: none;
-    width: 9px;
-    height: 9px;
-    border-radius: 15px;
+#feed-friend .feed .donate form p input[type="radio"]:checked {
+    border: 1px solid #4B9200;
+    background-color: #4B9200;
 }
 
 #feed-friend .feed .donate form .time {
@@ -1113,34 +1103,96 @@ footer .wrap-third .subscription .author{
         padding: 0;
     }
 
+    header nav {
+        top: 0;
+        margin: 0;
+        position: fixed;
+        right: -100vh;
+    }
+
     header nav ul {
         display: flex;
         flex-direction: column;
     }
 
-    header .container nav {
-        margin: 10px 0 0 0px;
+    header .logo {
+        border: 0;
     }
 
-    header nav {
-        z-index: 60;
+    .show {
+        z-index: 1000;
         top: 0;
         margin: 0;
         position: fixed;
-        right: -200vw;
-        width: 165px;
-        padding: 44px 15px 30px 0;
+        right: 0;
+        width: 100%;
+        padding: 10px 15px 40px 0;
         display: block !important;
-        background: #F2785C;
+        background: #FFF;
         box-shadow: 0px 4px 3px rgb(13 96 111 / 25%);
         border-radius: 10px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
 
-    header .logo {
-        border: none;
+    .show .container {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 30px;
+    }
+
+    .show .logo {
+        border: 1px solid #FE9013;
+    }
+
+    .show h1 {
+        color: #FE9013;
+        font-size: 19.0145px;
+    }
+
+    .show img {
+        position: absolute;
+        left: 10px;
+        top: 24px;
+        width: 12px;
+        height: 21px;
+        filter: invert(37%) sepia(23%) saturate(2604%) hue-rotate(350deg) brightness(102%) contrast(99%);
+    }
+
+    .show nav {
+        position: static;
+    }
+
+    .show ul {
+        gap: 15px;
+    }
+
+    .show a, .show ul .about {
+        color: #333B41;
+    }
+
+    .show .copyright {
+        margin-left: 0px;
+    }
+
+    .show a:hover {
+        color: #ff0000;
     }
     
+    .show a:active {
+        color: #F9804B;
+    }
+
+    .active{
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 900;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 1;
+    }  
 
     #nav-toggle {
         position: absolute;
@@ -1543,6 +1595,10 @@ footer .wrap-third .subscription .author{
     .container {
         width: 400px;
         margin: 0 auto;
+    }
+
+    .show img {
+        left: 6px;
     }
 
     #feed-friend .container {
