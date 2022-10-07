@@ -13,7 +13,7 @@ html, body {
     width: 1160px;
 }
 
-.menu-shadow {
+.menu-shadow, .comment-shadow {
     display: none;
 }
 
@@ -654,6 +654,32 @@ header .copyright {
     linear-gradient(to top left, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%) border-box;
     border: 2px solid transparent;
     border-radius: 15px;
+    animation: showBlock 0.5s linear forwards;
+    transition: .25s opacity, .25s height;
+    opacity: 1;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#testimonials .animate{
+    animation: del 0.5s linear forwards;
+    opacity: 1;
+}
+
+@keyframes del {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
 }
 
 #testimonials .comment .text {
@@ -1282,7 +1308,7 @@ footer .wrap-third .subscription .author{
         margin-right: 48px;
     }
 
-    #testimonials .review .comment:nth-child(4) {
+    #testimonials .review .comment:nth-child(5) {
         display: none;
     }
 
@@ -1913,6 +1939,7 @@ footer .wrap-third .subscription .author{
         width: 100%;
         height: 109px;
         padding: 15px 0px 20px 2px;
+        transition: 0.5s;
     }
 
     #testimonials .comment .text {
@@ -1923,6 +1950,98 @@ footer .wrap-third .subscription .author{
 
     #testimonials .comment:nth-child(2) .text p {
         width: auto;
+    }
+
+    #testimonials .show-comment {
+        z-index: 1000;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 268px;
+        height: auto;
+        padding: 15px 14px 20px 15px;
+        background: 
+        linear-gradient(#F5F7F6 0 0) padding-box,
+        linear-gradient(to top left, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%) border-box;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        transition: 0.5s;
+        outline: 20px solid #fff;
+    } 
+
+    #testimonials .show-comment .text {
+        height: auto;
+    }
+
+    #testimonials .show-comment .text p{
+        margin: 0;
+        margin-top: 3px;
+        text-overflow: clip;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: #767474;
+    }
+    
+    #testimonials .show-comment .avatar{
+        width: 37px;
+        height: 37px;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 100% 100%;
+    }
+    
+    #testimonials .show-comment .first{
+        background-image: url(../../assets/svg/avatar.svg);
+    }
+    
+    #testimonials .show-comment .second{
+        background-image: url(../../assets/svg/avatar-2.svg);
+    }
+    
+    #testimonials .show-comment .third{
+        background-image: url(../../assets/svg/avatar-3.svg);
+    }
+
+    #testimonials .show-comment .four{
+        background-image: url(../../assets/svg/avatar-4.svg);
+    }
+    
+    #testimonials .show-comment .person {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #testimonials .show-comment .person .caption .name{
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #000000;
+    }
+    
+    #testimonials .show-comment .person .caption .signature {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: #BDBDBD;
+    }
+    
+    #testimonials .show-comment .feedback {
+        align-self: flex-start;
+    }
+
+    #testimonials .show-comment:nth-child(2) {
+        padding: 15px 14px 20px 15px;
     }
 
     #testimonials input[type="range"] {
@@ -1977,7 +2096,6 @@ footer .wrap-third .subscription .author{
         margin: 0 auto;
     }
 
-    
     header{
         position: fixed;
         z-index: 1000;

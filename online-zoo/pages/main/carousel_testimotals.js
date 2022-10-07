@@ -2,32 +2,42 @@ var elem = document.querySelector('input[type="range"]')
 const review = document.querySelector('.review')
 const com = document.querySelectorAll('.comment')
 var massComments = [];
-var massNames = ['Alex', 'Brutto', 'Fin', 'Abobus', 'Kirill', 'Floppa', 'Stepandus', 'Steve'];
+var massNames = ['Alex', 'Brutto', 'Fin', 'Abobus', 'Kirill', 'Floppa', 'Stepandus', 'Steve', 'Lama'];
 var prev = 0;
 createComments()
 const pageWidth = document.documentElement.scrollWidth
 
-if(pageWidth <= 1200){
+if(pageWidth > 840 && pageWidth <= 1200){
     var rangeValue = function(){
         var newValue = elem.value
+        console.log(newValue)
+        console.log( massComments[newValue])
         if(newValue < prev){
             if(newValue < 3){
-                com[newValue].style.display = 'block';
-                review.lastElementChild.remove();
+                review.lastElementChild.classList.toggle('animate');
+                setTimeout(() => { review.lastElementChild.remove(); }, 400);
+                com[newValue].classList.toggle('animate');
+                setTimeout(() => { com[newValue].style.display = 'block'; }, 300);
             }
             else{
-                com[3].after(massComments[newValue - 2]);
-                review.lastElementChild.remove();
+                review.lastElementChild.classList.toggle('animate');
+                setTimeout(() => { review.lastElementChild.remove(); }, 300);
+                massComments[newValue - 3].classList.remove('animate');
+                setTimeout(() => { com[3].after(massComments[newValue - 3]); }, 400);
             }
         }
         else{
             if(newValue <= 3){
-                com[newValue - 1].style.display = 'none'
-                review.appendChild(massComments[newValue]);
+                com[newValue - 1].classList.toggle('animate');
+                setTimeout(() => { com[newValue - 1].style.display = 'none' }, 300);
+                massComments[newValue - 1].classList.remove('animate');
+                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
             }
             else{
-                review.appendChild(massComments[newValue]);
-                review.removeChild(massComments[newValue - 3]);
+                massComments[newValue - 4].classList.add('animate');
+                setTimeout(() => { review.removeChild(massComments[newValue - 4]); }, 300);
+                massComments[newValue - 1].classList.remove('animate');
+                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
             }
         }
         prev = newValue
@@ -38,22 +48,30 @@ else{
         var newValue = elem.value
         if(newValue < prev){
             if(newValue < 4){
-                com[newValue].style.display = 'block';
-                review.lastElementChild.remove();
+                review.lastElementChild.classList.toggle('animate');
+                setTimeout(() => { review.lastElementChild.remove(); }, 400);
+                com[newValue].classList.toggle('animate');
+                setTimeout(() => { com[newValue].style.display = 'block'; }, 400);
             }
             else{
-                com[3].after(massComments[newValue - 3]);
-                review.lastChild.remove();
+                review.lastElementChild.classList.toggle('animate');
+                setTimeout(() => { review.lastElementChild.remove(); }, 300);
+                massComments[newValue - 4].classList.remove('animate');
+                setTimeout(() => { com[3].after(massComments[newValue - 4]); }, 400);
             }
         }
         else{
             if(newValue <= 4){
-                com[newValue - 1].style.display = 'none'
-                review.appendChild(massComments[newValue]);
+                com[newValue - 1].classList.toggle('animate');
+                setTimeout(() => { com[newValue - 1].style.display = 'none' }, 300);
+                massComments[newValue - 1].classList.remove('animate');
+                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
             }
             else{
-                review.appendChild(massComments[newValue]);
-                review.removeChild(massComments[newValue - 4]);
+                massComments[newValue - 5].classList.add('animate');
+                setTimeout(() => { review.removeChild(massComments[newValue - 5]); }, 300);
+                massComments[newValue - 1].classList.remove('animate');
+                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
             }
         }
         prev = newValue
