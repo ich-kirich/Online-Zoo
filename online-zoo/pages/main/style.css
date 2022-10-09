@@ -264,10 +264,12 @@ header .copyright {
     column-gap: 30px;
     row-gap: 20px;
     margin-bottom: 80px;
-    animation: 1s ease-in-out;
+    animation: 0.5s ease-in-out;
 }
 
 #pets .block-animals{
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: row;
     transform: translate(0, 0);
@@ -290,13 +292,11 @@ header .copyright {
 }
 
 #pets .to-right {
-    animation-name: left;
-    animation-direction: reverse;
+    animation-name: to-right;
 }
 
 #pets .from-left {
-    animation-name: right;
-    animation-direction: reverse;
+    animation-name: from-left;
 }
 
 @keyframes left {
@@ -314,6 +314,24 @@ header .copyright {
     }
     to {
         left: 0;
+    }
+}
+
+@keyframes to-right {
+    from {
+        right: 0;
+    }
+    to {
+        right: -1500px;
+    }
+}
+
+@keyframes from-left {
+    from {
+        right: 1500px;
+    }
+    to {
+        right: 0;
     }
 }
 
@@ -337,8 +355,8 @@ header .copyright {
     color: #fff;
 }
 
-#pets .photo-animal:hover img {
-    transform: scale(1.03, 1.03);
+#pets .photo-animal:hover img, #pets .photo-animal:hover .create-card {
+    transform: scale(1.03, 1);
 }
 
 #pets .under-pict {
