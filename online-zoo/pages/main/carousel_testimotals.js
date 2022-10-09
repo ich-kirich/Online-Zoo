@@ -5,7 +5,7 @@ var massNames = ['Alex', 'Brutto', 'Fin', 'Abobus', 'Kirill', 'Floppa', 'Stepand
 var prev = 0;
 var allComments = createComments()
 const pageWidth = document.documentElement.scrollWidth
-if(pageWidth > 840 && pageWidth <= 1200){
+if(pageWidth <= 1200){
     let review = document.querySelector('.review')
     review.lastElementChild.remove();
     elem.setAttribute('max', '9')
