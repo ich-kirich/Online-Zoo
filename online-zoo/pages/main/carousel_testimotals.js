@@ -1,81 +1,59 @@
 var elem = document.querySelector('input[type="range"]')
-const review = document.querySelector('.review')
-const com = document.querySelectorAll('.comment')
+var com = document.querySelectorAll('.comment')
 var massComments = [];
 var massNames = ['Alex', 'Brutto', 'Fin', 'Abobus', 'Kirill', 'Floppa', 'Stepandus', 'Steve', 'Lama'];
 var prev = 0;
-createComments()
+var allComments = createComments()
 const pageWidth = document.documentElement.scrollWidth
-
 if(pageWidth > 840 && pageWidth <= 1200){
-    var rangeValue = function(){
-        var newValue = elem.value
-        console.log(newValue)
-        console.log( massComments[newValue])
-        if(newValue < prev){
-            if(newValue < 3){
-                review.lastElementChild.classList.toggle('animate');
-                setTimeout(() => { review.lastElementChild.remove(); }, 400);
-                com[newValue].classList.toggle('animate');
-                setTimeout(() => { com[newValue].style.display = 'block'; }, 300);
-            }
-            else{
-                review.lastElementChild.classList.toggle('animate');
-                setTimeout(() => { review.lastElementChild.remove(); }, 300);
-                massComments[newValue - 3].classList.remove('animate');
-                setTimeout(() => { com[3].after(massComments[newValue - 3]); }, 400);
-            }
-        }
-        else{
-            if(newValue <= 3){
-                com[newValue - 1].classList.toggle('animate');
-                setTimeout(() => { com[newValue - 1].style.display = 'none' }, 300);
-                massComments[newValue - 1].classList.remove('animate');
-                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
-            }
-            else{
-                massComments[newValue - 4].classList.add('animate');
-                setTimeout(() => { review.removeChild(massComments[newValue - 4]); }, 300);
-                massComments[newValue - 1].classList.remove('animate');
-                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
-            }
-        }
-        prev = newValue
-    };
+    let review = document.querySelector('.review')
+    review.lastElementChild.remove();
+    elem.setAttribute('max', '10')
 }
-else{
-    var rangeValue = function(){
+
+function changeComments(){
+    if(pageWidth > 840 && pageWidth <= 1200){
         var newValue = elem.value
-        if(newValue < prev){
-            if(newValue < 4){
-                review.lastElementChild.classList.toggle('animate');
-                setTimeout(() => { review.lastElementChild.remove(); }, 400);
-                com[newValue].classList.toggle('animate');
-                setTimeout(() => { com[newValue].style.display = 'block'; }, 400);
+        let review = document.querySelector('.review')
+        ind1 = Number(prev) + 1
+        ind2 = Number(prev) + 2
+        setTimeout(() => { 
+            allComments[Number(prev)].classList.add('animate');
+            allComments[ind1].classList.add('animate');
+            allComments[ind2].classList.add('animate');
+            let del = document.querySelectorAll('.animate')
+            for(let i = 0; i < del.length; i++){
+                del[i].classList.remove('animate')
+                del[i].remove();
             }
-            else{
-                review.lastElementChild.classList.toggle('animate');
-                setTimeout(() => { review.lastElementChild.remove(); }, 300);
-                massComments[newValue - 4].classList.remove('animate');
-                setTimeout(() => { com[3].after(massComments[newValue - 4]); }, 400);
+            for(let i = 0; i < 3; i++){
+                review.appendChild(allComments[Number(newValue) + i]);
             }
-        }
-        else{
-            if(newValue <= 4){
-                com[newValue - 1].classList.toggle('animate');
-                setTimeout(() => { com[newValue - 1].style.display = 'none' }, 300);
-                massComments[newValue - 1].classList.remove('animate');
-                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
+            prev = newValue
+        }, 100);
+    }
+    else{
+        var newValue = elem.value
+        let review = document.querySelector('.review')
+        ind1 = Number(prev) + 1
+        ind2 = Number(prev) + 2
+        ind3 = Number(prev) + 3
+        setTimeout(() => { 
+            allComments[Number(prev)].classList.add('animate');
+            allComments[ind1].classList.add('animate');
+            allComments[ind2].classList.add('animate');
+            allComments[ind3].classList.add('animate');
+            let del = document.querySelectorAll('.animate')
+            for(let i = 0; i < del.length; i++){
+                del[i].classList.remove('animate')
+                del[i].remove();
             }
-            else{
-                massComments[newValue - 5].classList.add('animate');
-                setTimeout(() => { review.removeChild(massComments[newValue - 5]); }, 300);
-                massComments[newValue - 1].classList.remove('animate');
-                setTimeout(() => { review.appendChild(massComments[newValue - 1]); }, 400);
+            for(let i = 0; i < 4; i++){
+                review.appendChild(allComments[Number(newValue) + i]);
             }
-        }
-        prev = newValue
-    };
+            prev = newValue
+        }, 100);
+    }
 }
 
 function createComments(){
@@ -108,6 +86,6 @@ function createComments(){
         comment.classList.toggle('comment')
         massComments.push(comment)
     }
+    let allComments = Array.from(com).concat(massComments);
+    return allComments
 };
-
-elem.addEventListener("input", rangeValue)

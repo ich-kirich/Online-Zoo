@@ -6,6 +6,7 @@
 html, body {
     min-height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -645,6 +646,7 @@ header .copyright {
 }
 
 #testimonials .comment {
+    position: relative;
     overflow: hidden;
     width: 268px;
     height: 391px;
@@ -655,30 +657,32 @@ header .copyright {
     border: 2px solid transparent;
     border-radius: 15px;
     animation: showBlock 0.5s linear forwards;
-    transition: .25s opacity, .25s height;
+    transition: .5s opacity, .25s height;
     opacity: 1;
 }
 
 @keyframes showBlock {
   0% {
+    right: 500px;
     opacity: 0;
   }
   100% {
+    right: 0px;
     opacity: 1;
   }
 }
 
 #testimonials .animate{
-    animation: del 0.5s linear forwards;
+    animation: del 1s linear forwards;
     opacity: 1;
 }
 
 @keyframes del {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 0;
+        opacity: 0;
     }
 }
 
@@ -1306,10 +1310,6 @@ footer .wrap-third .subscription .author{
 
     #feed-friend .feed-now {
         margin-right: 48px;
-    }
-
-    #testimonials .review .comment:nth-child(5) {
-        display: none;
     }
 
     #testimonials .leaf {

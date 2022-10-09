@@ -1,6 +1,7 @@
 let comments = document.querySelectorAll('.comment')
 const Shadow = document.querySelector('.comment-shadow')
 flag = true
+
 if(pageWidth <= 840){
     let close = document.createElement("div");
     close.classList.toggle('close')
