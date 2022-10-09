@@ -1,14 +1,14 @@
 var elem = document.querySelector('input[type="range"]')
 var com = document.querySelectorAll('.comment')
 var massComments = [];
-var massNames = ['Alex', 'Brutto', 'Fin', 'Abobus', 'Kirill', 'Floppa', 'Stepandus', 'Steve', 'Lama'];
+var massNames = ['Alex', 'Brutto', 'Fin', 'Abobus', 'Kirill', 'Floppa', 'Stepandus', 'Steve'];
 var prev = 0;
 var allComments = createComments()
 const pageWidth = document.documentElement.scrollWidth
 if(pageWidth > 840 && pageWidth <= 1200){
     let review = document.querySelector('.review')
     review.lastElementChild.remove();
-    elem.setAttribute('max', '10')
+    elem.setAttribute('max', '9')
 }
 
 function changeComments(){
@@ -57,7 +57,7 @@ function changeComments(){
 }
 
 function createComments(){
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 8; i++) {
         let comment = document.createElement("div");
         let person = document.createElement("div");
         let text = document.createElement("div");
