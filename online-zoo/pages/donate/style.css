@@ -315,7 +315,7 @@ header .copyright {
 }
 
 
-#feed-friend .feed .amount .how-many .active {
+#feed-friend .feed .amount .how-many .active-num {
     width: 150px;
     height: 150px;
     margin: 50px auto;
@@ -323,7 +323,7 @@ header .copyright {
     border-radius: 50%;
 }
   
-#feed-friend .feed .amount .how-many .active .b-circle-line {
+#feed-friend .feed .amount .how-many .active-num .b-circle-line {
     position: absolute;
     top: -8px;
     left: -8px;
@@ -333,7 +333,7 @@ header .copyright {
     border-radius: 50%;
 }
 
-#feed-friend .feed .amount .how-many .active .b-circle-line:nth-of-type(2) {
+#feed-friend .feed .amount .how-many .active-num .b-circle-line:nth-of-type(2) {
     top: -16px;
     left: -16px;
     right: -16px;
@@ -356,9 +356,7 @@ header .copyright {
     color: #333B41;
 }
 
-#feed-friend .feed .amount .price .active {
-    margin-left: -3px;
-    margin-right: -2px;
+#feed-friend .feed .amount .price .active-num {
     color: #FE9013;
 }
 
@@ -914,7 +912,7 @@ footer .wrap-third .subscription .author{
         width: 790px;
     }
 
-    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(2) {
+    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(1) {
         display: none;
     }
 
@@ -1166,7 +1164,7 @@ footer .wrap-third .subscription .author{
         gap: 15px;
     }
 
-    .show a, .show ul .about {
+    .show a, header .container ul .choose {
         color: #333B41;
     }
 
@@ -1267,31 +1265,12 @@ footer .wrap-third .subscription .author{
         gap: 113px;
     }
 
-    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(7), #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(8) {
+    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(2), #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-child(3) {
         display: none;
     }
 
     #feed-friend .feed .amount .price .number:nth-child(2), #feed-friend .feed .amount .price .number:nth-of-type(3) {
        display: none;
-    }
-
-    #feed-friend .feed .amount .price .number:nth-of-type(6) {
-        margin-left: -3px;
-        margin-right: -2px;
-        color: #FE9013;
-    }
-
-    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-of-type(3) {
-        order: 2;
-    }
-
-    
-    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-of-type(5) {
-        order: 3;
-    }
-
-    #feed-friend .feed .amount .how-many .gray .yellow-circle:nth-of-type(6) {
-        order: 4;
     }
 
     footer .container {
@@ -1487,11 +1466,6 @@ footer .wrap-third .subscription .author{
         margin-right: 0px;
     }
 
-    #feed-friend .feed .amount .price .number:nth-of-type(6) {
-        margin-left: -1px;
-        margin-right: -6px;
-        color: #FE9013;
-    }
 
     #feed-friend .feed .amount .price .number:nth-of-type(7) {
         margin-right: 15px;
@@ -1821,7 +1795,7 @@ footer .wrap-third .subscription .author{
         gap: 60px;
     }
 
-    #feed-friend .feed .amount .how-many .active .b-circle-line {
+    #feed-friend .feed .amount .how-many .active-num .b-circle-line {
         position: absolute;
         top: -5px;
         left: -5px;
@@ -1831,7 +1805,7 @@ footer .wrap-third .subscription .author{
         border-radius: 50%;
     }
 
-    #feed-friend .feed .amount .how-many .active .b-circle-line:nth-of-type(2) {
+    #feed-friend .feed .amount .how-many .active-num .b-circle-line:nth-of-type(2) {
         top: -10px;
         left: -10px;
         right: -10px;

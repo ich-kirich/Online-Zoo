@@ -15,8 +15,8 @@ if(pageWidth <= 840){
     close.style.zIndex = '1100'
     close.style.top = '1%'
     close.style.right = '1%'
-    comments.forEach((comment) => { // Перебираем все кнопки
-        comment.onclick = (e) => { // Для каждой вешаем обработчик событий на клик
+    comments.forEach((comment) => {
+        comment.onclick = (e) => { 
             comment.appendChild(close)
             e.preventDefault();
             comment.classList.remove('comment')
