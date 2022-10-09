@@ -80,6 +80,22 @@ function createCardPet(){
     underCard.append(icon)
     card.append(underCard)
     newCards.push(card)
+    if(pageWidth > 840 && pageWidth <= 1200){
+        img.style.backgroundSize = '294px 294px'
+        img.style.width = '294px'
+        img.style.height = '294px'
+        ic.style.width = '49px'
+        ic.style.height = '49px'
+        ic.style.backgroundSize = '49px 49px'
+    }
+    else if(pageWidth > 630 && pageWidth <= 640){
+        img.style.backgroundSize = '285px 285px'
+        img.style.width = '285px'
+        img.style.height = '285px'
+        ic.style.width = '35px'
+        ic.style.height = '28px'
+        ic.style.backgroundSize = '35px 28px'
+    }
     return newCards
 }
 
@@ -94,13 +110,13 @@ function createCards(){
 }
 
 function generationNumber(){
-    const range = 6;
+    const range = 7;
     const count = 6;
     let m = {};
     let a = [];
     for (let i = 0; i < count; ++i) {
       let r = Math.floor(Math.random() * (range - i));
-      a.push(((r in m) ? m[r] : r) + 1);
+      a.push(((r in m) ? m[r] : r));
       let l = range - i - 1;
       m[r] = (l in m) ? m[l] : l;
     }
