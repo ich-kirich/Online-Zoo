@@ -88,6 +88,14 @@ function createCardPet(){
         ic.style.height = '49px'
         ic.style.backgroundSize = '49px 49px'
     }
+    else if(pageWidth > 640 && pageWidth <= 840){
+        img.style.backgroundSize = '280px 294px'
+        img.style.width = '280px'
+        img.style.height = '294px'
+        ic.style.width = '35px'
+        ic.style.height = '28px'
+        ic.style.backgroundSize = '35px 28px'
+    }
     else if(pageWidth > 630 && pageWidth <= 640){
         img.style.backgroundSize = '285px 285px'
         img.style.width = '285px'
